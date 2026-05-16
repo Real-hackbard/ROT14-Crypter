@@ -34,10 +34,10 @@ When encoding a message, A becomes N, B becomes O, and so on up to M, which beco
 
 ### The transformation can be done using a lookup table, such as the following:
 
-| Überschrift 1 | Überschrift 2 |
+| Description | Text |
 | :-----------: | :-----------: |
 | Input      | $\color{Red}{\textsf{ABCDEFGHIJKLM}}$ $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$ $\color{Red}{\textsf{abcdefghijklm}}$ $\color{Green}{\textsf{nopqrstuvwxyz}}$    |
-| Output     | $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$     |
+| Output     | $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$ $\color{Red}{\textsf{ABCDEFGHIJKLM}}$ $\color{Green}{\textsf{nopqrstuvwxyz}}$ $\color{Green}{\textsf{abcdefghijklm}}$  |
 
 
 
