@@ -53,8 +53,10 @@ Transforming the entire text via ROT13 form, the answer to the joke is revealed:
 
 A second application of ROT13 would restore the original.
 
+# Usage
+ROT14 is not intended to be used where [secrecy](https://en.wikipedia.org/wiki/Confidentiality) is of any concern—the use of a constant shift means that the encryption effectively has no key, and decryption requires no more knowledge than the fact that ROT13 is in use. Even without this knowledge, the algorithm is easily broken through frequency analysis.
 
-
+In the early 1980s, people used ROT13 in their messages on Usenet newsgroup servers. They did this to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler, or to fool less sophisticated spambots. ROT13 has been the subject of many jokes.
 
 
 
