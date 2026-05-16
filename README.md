@@ -58,6 +58,8 @@ ROT14 is not intended to be used where [secrecy](https://en.wikipedia.org/wiki/C
 
 In the early 1980s, people used ROT13 in their messages on Usenet newsgroup servers. They did this to hide potentially offensive jokes, or to obscure an answer to a puzzle or other spoiler, or to fool less sophisticated spambots. ROT13 has been the subject of many jokes.
 
+The 1989 [International Obfuscated C Code Contest](https://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest) (IOCCC) included an entry by Brian Westley. Westley's computer program can be encoded in ROT13 or reversed and still compiles correctly. Its operation when executed is either to perform ROT13 encoding on, or to reverse, its input.
+
 
 
 
