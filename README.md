@@ -94,6 +94,8 @@ NOPQRSTUVWXYZABCDEFGHIJKLM
 # JavaScript
 Without using specific built-in cryptographic libraries or advanced string methods, a ROT13 function can be implemented manually in JavaScript by processing characters one by one and performing a direct letter lookup and shift:
 
+</br>
+
 ```JavaScript
 function rot13(str) {
   const upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -133,9 +135,54 @@ function rot13(str) {
 // console.log(rot13("Javascript is fun.")); // Wninfpevcg vf sha.
 ```
 
+# Python
+The module codecs has a "rot13" text transform option:
 
+</br>
 
+```python
+>>> import codecs
+>>> print(codecs.encode("The Quick Brown Fox Jumps Over The Lazy Dog", "rot13"))
+Gur Dhvpx Oebja Sbk Whzcf Bire Gur Ynml Qbt
+```
 
+</br>
+
+Without importing any libraries, the cipher can be done by creating a translation table manually:
+
+</br>
+
+```python
+>>> def gen_rot13_table(func=lambda x: x):
+...     for c in (ord("A"), ord("a")):
+...         for i in range(26):
+...             yield func(i + c), func((i + 13) % 26 + c)
+>>> table = dict(gen_rot13_table(chr))
+>>> table
+{'A': 'N', 'B': 'O', 'C': 'P', 'D': 'Q', 'E': 'R', 'F': 'S', 'G': 'T', 'H': 'U', 'I': 'V', 'J': 'W', 'K': 'X', 'L': 'Y', 'M': 'Z', 'N': 'A', 'O': 'B', 'P': 'C', 'Q': 'D', 'R': 'E', 'S': 'F', 'T': 'G', 'U': 'H', 'V': 'I', 'W': 'J', 'X': 'K', 'Y': 'L', 'Z': 'M', 'a': 'n', 'b': 'o', 'c': 'p', 'd': 'q', 'e': 'r', 'f': 's', 'g': 't', 'h': 'u', 'i': 'v', 'j': 'w', 'k': 'x', 'l': 'y', 'm': 'z', 'n': 'a', 'o': 'b', 'p': 'c', 'q': 'd', 'r': 'e', 's': 'f', 't': 'g', 'u': 'h', 'v': 'i', 'w': 'j', 'x': 'k', 'y': 'l', 'z': 'm'}
+>>>
+>>> s = "Quartz glyph job vext cwm porshrop finks?!"
+>>> print("".join(table.get(c, c) for c in s))
+Dhnegm tylcu wbo irkg pjz cbefuebc svaxf?!
+```
+
+</br>
+
+For Python 3, the method str.translate (with str.maketrans can be used:
+
+```python
+>>> x, y = zip(*gen_rot13_table(chr))
+>>> ''.join(x)
+'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+>>> ''.join(y)
+'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
+>>> table = str.maketrans(''.join(x), ''.join(y))
+>>> table
+{65: 78, 66: 79, 67: 80, 68: 81, 69: 82, 70: 83, 71: 84, 72: 85, 73: 86, 74: 87, 75: 88, 76: 89, 77: 90, 78: 65, 79: 66, 80: 67, 81: 68, 82: 69, 83: 70, 84: 71, 85: 72, 86: 73, 87: 74, 88: 75, 89: 76, 90: 77, 97: 110, 98: 111, 99: 112, 100: 113, 101: 114, 102: 115, 103: 116, 104: 117, 105: 118, 106: 119, 107: 120, 108: 121, 109: 122, 110: 97, 111: 98, 112: 99, 113: 100, 114: 101, 115: 102, 116: 103, 117: 104, 118: 105, 119: 106, 120: 107, 121: 108, 122: 109}
+>>>
+>>> print(s.translate(table))
+Dhnegm tylcu wbo irkg pjz cbefuebc svaxf?!
+```
 
 
 
