@@ -60,6 +60,21 @@ In the early 1980s, people used ROT13 in their messages on Usenet newsgroup serv
 
 The 1989 [International Obfuscated C Code Contest](https://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest) (IOCCC) included an entry by Brian Westley. Westley's computer program can be encoded in ROT13 or reversed and still compiles correctly. Its operation when executed is either to perform ROT13 encoding on, or to reverse, its input.
 
+Some words will, when transformed with ROT13, produce another word. Examples of seven-letter pairs in the English language are abjurer and nowhere, and Chechen and purpura. Other examples of word pairs are shown in the table. The pair gnat and tang is an example of words that are both ROT13 reciprocals and reversals.
+
+### ROT13 reciprocal word pairs
+
+</br>
+
+```
+abcdefghijklmnopqrstuvwxyz
+NOPQRSTUVWXYZABCDEFGHIJKLM
+```
+
+
+
+
+
 
 
 
