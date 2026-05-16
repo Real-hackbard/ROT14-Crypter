@@ -10,6 +10,11 @@
 
 </br>
 
+ROT14 is one of the [twenty-ish lesser-known](https://en.wikipedia.org/wiki/Substitution_cipher) cousins of ROT13. Part of the families of rotational ciphers, [Caesar-shift ciphers](https://en.wikipedia.org/wiki/Caesar_cipher), and monoalphabetic substitution ciphers, ROT14 is, by today's standards, a weak cryptosystem. It is easily spotted (though maybe not quite as easily as ROT13), and has a known algorithm with the same key used every time. In contrast to ROT13, though, the encryption algorithm and decryption algorithm differ slightly.
+
+* To encrypt plaintext, first convert every letter to a number (using A=0, B=1, C=2, ..., Z=25 is the best way to do it if you're mathematically- or computer-science-minded). For each number, add 14, then if the resulting number is above 25, subtract 26 until you get a result between 0 and 25 (inclusive). Then convert the resulting number back to a letter using the same A=0, B=1... system above.
+* To decrypt ciphertext, follow the above steps except swap addition operations for subtraction operations and vice versa.
+
 
 
 
