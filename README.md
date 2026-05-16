@@ -10,8 +10,6 @@
 
 
 </br>
-</br>
-</br>
 
 ROT14 is one of the [twenty-ish lesser-known](https://en.wikipedia.org/wiki/Substitution_cipher) cousins of ROT13. Part of the families of rotational ciphers, [Caesar-shift ciphers](https://en.wikipedia.org/wiki/Caesar_cipher), and monoalphabetic substitution ciphers, ROT14 is, by today's standards, a weak cryptosystem. It is easily spotted (though maybe not quite as easily as ROT13), and has a known algorithm with the same key used every time. In contrast to ROT13, though, the encryption algorithm and decryption algorithm differ slightly.
 
@@ -24,6 +22,7 @@ All of this is just a fancy way of saying "to encode your message in ROT14, shif
 
 <img src="https://github.com/user-attachments/assets/d3c3c958-effb-4d99-93d8-49f105c7b711" />
 
+</br>
 </br>
 
 The uses of ROT14 are more-or-less the same as ROT13 - it has uses in cipher-based puzzles, censorship, word games, and concealing information such as fiction spoilers that aren't military-grade secrets but still should be hidden away from accidental gazes - y'know, because it's polite. However, the drawback of ROT14 is that one must use two different algorithms if one is writing computer code to encrypt or decrypt, whereas with ROT13 the same algorithm can be used to encrypt and decrypt. It is necessary, therefore, to know whether your message is currently in a state of [plaintext](https://en.wikipedia.org/wiki/Plaintext) or ciphertext. (In saying that, if you get it wrong the first time, you haven't spent much time on it and you can easily regain that time.)
