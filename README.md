@@ -91,7 +91,47 @@ NOPQRSTUVWXYZABCDEFGHIJKLM
 
 </br>
 
+# JavaScript
+Without using specific built-in cryptographic libraries or advanced string methods, a ROT13 function can be implemented manually in JavaScript by processing characters one by one and performing a direct letter lookup and shift:
 
+```JavaScript
+function rot13(str) {
+  const upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  const lower_case = "abcdefghijklmnopqrstuvwxyz".split("");
+
+  let result = "";
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+
+    if (upper_case.includes(char)) {
+      let index = upper_case.indexOf(char);
+      // Rotate the index by 13 positions.
+      // If index is from 0 to 12  then add 13. If index is from 13 to 25, subtract 13
+      let rotated_Index = index < 13 ? index + 13 : index - 13;
+      result += upper_case[rotated_Index];
+    }
+    // Check if the character is a lowercase letter
+    else if (lower_case.includes(char)) {
+      let index = lower_case.indexOf(char);
+
+      // Rotate the index by 13 positions.
+      let rotated_Index = index < 13 ? index + 13 : index - 13;
+      result += lower_case[rotated_Index];
+    }
+
+    // If it's not a letter, append it as it is
+    else {
+      result += char;
+    }
+  }
+
+  return result;
+}
+// Example usage:
+// console.log(rot13("Hello World!")); // Uryyb Jbeyq!
+// console.log(rot13("Javascript is fun.")); // Wninfpevcg vf sha.
+```
 
 
 
