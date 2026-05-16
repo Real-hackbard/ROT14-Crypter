@@ -28,7 +28,16 @@ The uses of ROT14 are more-or-less the same as ROT13 - it has uses in cipher-bas
 
 ROT14 could be considered an inverse, or "sister", rotation cipher to ROT12. Since shifting letters 14 places forward in the alphabet is equivalent to shifting them backwards 12 letters (with the alphabet being used in a cyclical manner as opposed to linear), the encryption algorithm for ROT14 is the decryption algorithm for ROT12 and vice versa. In this way, every rotation cipher has a "sister" cipher except ROT13 (which is its own inverse. Interestingly, though, if a ciphertext has been encrypted using ROT14, then repeatedly applying the encryption algorithm will eventually yield the plaintext - though after twelve applications (and again at 25, and every thirteen steps thereafter). The reason why this is true is left as an exercise for the reader.
 
+When encoding a message, A becomes N, B becomes O, and so on up to M, which becomes Z. Then the sequence continues at the beginning of the alphabet: N becomes A, O becomes B, and so on to Z, which becomes M. When decoding a message, the same substitution rules are applied, but this time on the ROT13 encrypted text. Other characters, such as numbers, symbols, punctuation or [whitespace](https://en.wikipedia.org/wiki/Whitespace_character), are left unchanged.
+
 </br>
+
+### The transformation can be done using a lookup table, such as the following:
+
+| Überschrift 1 | Überschrift 2 |
+| :-----------: | :-----------: |
+| Input      | $\color{Red}{\textsf{ABCDEFGHIJKLM}}$ $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$ $\color{Red}{\textsf{abcdefghijklm}}$ $\color{Green}{\textsf{nopqrstuvwxyz}}$    |
+| Output     | $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$     |
 
 
 
