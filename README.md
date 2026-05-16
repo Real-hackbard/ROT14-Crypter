@@ -76,7 +76,21 @@ NOPQRSTUVWXYZABCDEFGHIJKLM
 | Original | Swapped |
 | :-----------: | :-----------: |
 | ```aha and nun```     | ```ant and nag```     |
-| Zelle 2,1     | Zelle 2,2     |
+| ```balk and onyx```     | ```bar and one```     |
+| ```barf and ones```     | ```be and or```     |
+| ```bin and ova```     | ```ebbs and roof```     |
+| ```envy and rail```     | ```er and re```     |
+| ```errs and reef```     | ```flap and sync```     |
+| ```fur and she```     | ```gel and try```     |
+| ```gnat and tang```     | ```irk and vex```     |
+| ```clerk and pyrex```     | ```purely and cheryl```     |
+| ```PNG and cat```     | ```SHA and fun```     |
+| ```furby and sheol```     | ```terra and green```     |
+| ```what and Jung```     | ```URL and hey```     |
+| ```shone and FUBAR	```     | ```Ares and Nerf```     |
+
+</br>
+
 
 
 
