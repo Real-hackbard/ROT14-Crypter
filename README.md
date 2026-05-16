@@ -9,6 +9,7 @@
 ![License](https://github.com/user-attachments/assets/ff71a38b-8813-4a79-8774-09a2f3893b48) ![Freeware](https://github.com/user-attachments/assets/1fea2bbf-b296-4152-badd-e1cdae115c43)  
 
 </br>
+</br>
 
 ROT14 is one of the [twenty-ish lesser-known](https://en.wikipedia.org/wiki/Substitution_cipher) cousins of ROT13. Part of the families of rotational ciphers, [Caesar-shift ciphers](https://en.wikipedia.org/wiki/Caesar_cipher), and monoalphabetic substitution ciphers, ROT14 is, by today's standards, a weak cryptosystem. It is easily spotted (though maybe not quite as easily as ROT13), and has a known algorithm with the same key used every time. In contrast to ROT13, though, the encryption algorithm and decryption algorithm differ slightly.
 
