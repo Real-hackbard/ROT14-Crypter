@@ -17,6 +17,17 @@ ROT14 is one of the [twenty-ish lesser-known](https://en.wikipedia.org/wiki/Subs
 
 All of this is just a fancy way of saying "to encode your message in ROT14, shift every letter forwards 14 places in the alphabet, wrapping around to A if you reach Z".
 
+</br>
+
+<img src="https://github.com/user-attachments/assets/d3c3c958-effb-4d99-93d8-49f105c7b711" />
+
+</br>
+
+The uses of ROT14 are more-or-less the same as ROT13 - it has uses in cipher-based puzzles, censorship, word games, and concealing information such as fiction spoilers that aren't military-grade secrets but still should be hidden away from accidental gazes - y'know, because it's polite. However, the drawback of ROT14 is that one must use two different algorithms if one is writing computer code to encrypt or decrypt, whereas with ROT13 the same algorithm can be used to encrypt and decrypt. It is necessary, therefore, to know whether your message is currently in a state of plaintext or ciphertext. (In saying that, if you get it wrong the first time, you haven't spent much time on it and you can easily regain that time.)
+
+ROT14 could be considered an inverse, or "sister", rotation cipher to ROT12. Since shifting letters 14 places forward in the alphabet is equivalent to shifting them backwards 12 letters (with the alphabet being used in a cyclical manner as opposed to linear), the encryption algorithm for ROT14 is the decryption algorithm for ROT12 and vice versa. In this way, every rotation cipher has a "sister" cipher except ROT13 (which is its own inverse. Interestingly, though, if a ciphertext has been encrypted using ROT14, then repeatedly applying the encryption algorithm will eventually yield the plaintext - though after twelve applications (and again at 25, and every thirteen steps thereafter). The reason why this is true is left as an exercise for the reader.
+
+
 
 
 
