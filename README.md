@@ -39,6 +39,19 @@ When encoding a message, A becomes N, B becomes O, and so on up to M, which beco
 | Input      | $\color{Red}{\textsf{ABCDEFGHIJKLM}}$ $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$ $\color{Red}{\textsf{abcdefghijklm}}$ $\color{Green}{\textsf{nopqrstuvwxyz}}$    |
 | Output     | $\color{Green}{\textsf{NOPQRSTUVWXYZ}}$ $\color{Red}{\textsf{ABCDEFGHIJKLM}}$ $\color{Green}{\textsf{nopqrstuvwxyz}}$ $\color{Green}{\textsf{abcdefghijklm}}$  |
 
+</br>
+
+For example, in the following joke, the punchline has been obscured by ROT13:
+
+* ```Why did the chicken cross the road?```
+* ```Gb trg gb gur bgure fvqr!```
+
+Transforming the entire text via ROT13 form, the answer to the joke is revealed:
+
+* ```Jul qvq gur puvpxra pebff gur ebnq?```
+* ```To get to the other side!```
+
+A second application of ROT13 would restore the original.
 
 
 
